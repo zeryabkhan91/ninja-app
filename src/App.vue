@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo_thumbnail.png" width="100px" height="100px" class="round-logo">
+    <HomeScreen></HomeScreen>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeScreen from './components/HomeScreen.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeScreen
   }
 }
 </script>
@@ -24,5 +24,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.round-logo {
+  border-radius: 50%
 }
 </style>
